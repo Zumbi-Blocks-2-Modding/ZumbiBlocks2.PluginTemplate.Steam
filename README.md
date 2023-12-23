@@ -17,10 +17,12 @@ A modding template for **Zumbi Blocks 2**, powered by [BepInEx](https://github.c
 
 ## Quick Start
 
+**Need to target the itch.io build of the game? Try the [Universal template](https://github.com/Zumbi-Blocks-2-Modding/ZumbiBlocks2.PluginTemplate.Universal)!**
+
 This guide assumes you already have Zumbi Blocks 2 installed, complete with the BepInEx mod loader.  
 If you have not yet installed BepInEx, follow the [official guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) and return when done.
 
-1. Create a new repository based on this template.
+1. [Create a new repository based on this template](https://github.com/Zumbi-Blocks-2-Modding/ZumbiBlocks2.PluginTemplate.Steam/generate).
 2. Using your IDE, CLI, or Git-oriented desktop program, [clone your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 3. Open your local repository with your IDE. If prompted to trust the project, accept.
 
