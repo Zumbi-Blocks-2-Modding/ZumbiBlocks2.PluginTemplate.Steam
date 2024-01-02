@@ -67,9 +67,16 @@ Obviously, you're not going to release a mod named `ExamplePlugin`, so let's cha
 2. In `ExamplePlugin.cs`, fill out the plugin fields with your own details.
 3. Change the log message to one of your own.
 4. [Add a license](https://choosealicense.com/)! This is very important in the open source community.
+5. **(Optional)** If your Steam library is not on the C: drive, open the `.csproj.user` file, and enter your Steam library location.
 
 When done customizing your plugin base, click on `Build` in your IDE.  
 Your plugin will automatically be installed. Open the game and test it out!
+
+### Assets and Resources
+
+If your plugin has assets, create a folder named `assets` and it'll automatically be copied over to your mod folder when building your project.
+
+Likewise, if you have embedded resources, create a folder named `resources` and those will automatically be embedded when building.
 
 ---
 
