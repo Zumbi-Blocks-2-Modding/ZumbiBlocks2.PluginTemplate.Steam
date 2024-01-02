@@ -1,11 +1,48 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<!--
+    Zumbi Blocks 2 (Steam) Plugin Configuration
+
+    The below properties can be used to customize your project build,
+    ranging from install locations to dependencies and even build tasks.
+    This allows you to share your project in a way that others can customize themselves.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+
         <!--
             Custom Zumbi Blocks 2 install locations go here:
-            Installed Steam on another drive?
+            Installed Steam on another drive? Have a depot download?
             If so, this property is for you!
             Set this property to your Zumbi Blocks 2 installation directory.
         -->
-        <ZumbiBlocks2_Location></ZumbiBlocks2_Location>
+        <ZumbiBlocks2_Location>D:\SteamLibrary\steamapps\common\Zumbi Blocks 2 Open Alpha</ZumbiBlocks2_Location>
+
+        <!--
+            Task: File Validation
+            Verifies that the game and BepInEx are properly installed.
+            If the MMHOOK dependency is enabled, verifies its installation, too.
+        -->
+        <Enable_Task_FileValidation>true</Enable_Task_FileValidation>
+
+        <!--
+            Task: Plugin Install
+            Will automatically copy your plugin and assets to the BepInEx plugins folder.
+        -->
+        <Enable_Task_PluginInstall>true</Enable_Task_PluginInstall>
+
+        <!--
+            Dependency: GameLibs
+            Uses the ZumbiBlocks2.GameLibs package instead of the game's assembly,
+            allowing you to access any private/internal objects without Reflection.
+            (If you don't know what that means, keep this enabled for an easier time)
+        -->
+        <Enable_Dependency_GameLibs>true</Enable_Dependency_GameLibs>
+
+        <!--
+            Dependency: MMHOOK
+            Uses the generated MMHOOK assembly for easier development of mods.
+            Requires separate installatin of BepInEx.MonoMod.HookGenPatcher
+        -->
+        <Enable_Dependency_MMHOOK>false</Enable_Dependency_MMHOOK>
+
     </PropertyGroup>
 </Project>
