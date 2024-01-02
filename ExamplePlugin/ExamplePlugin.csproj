@@ -13,7 +13,7 @@
         <AssemblyVersion>0.1.0</AssemblyVersion>
         <!-- Know what you're doing and need more customization? Here you go! -->
         <LangVersion>10</LangVersion>
-        <TargetFramework>net481</TargetFramework>
+        <TargetFramework>net462</TargetFramework>
         <IsPackable>false</IsPackable>
         <RestoreAdditionalProjectSources>
             https://api.nuget.org/v3/index.json;

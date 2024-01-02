@@ -14,7 +14,7 @@
             If so, this property is for you!
             Set this property to your Zumbi Blocks 2 installation directory.
         -->
-        <ZumbiBlocks2_Location>D:\SteamLibrary\steamapps\common\Zumbi Blocks 2 Open Alpha</ZumbiBlocks2_Location>
+        <ZumbiBlocks2_Location></ZumbiBlocks2_Location>
 
         <!--
             Task: File Validation
