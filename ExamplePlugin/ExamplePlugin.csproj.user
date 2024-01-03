@@ -5,7 +5,7 @@
     ranging from install locations to dependencies and even build tasks.
     This allows you to share your project in a way that others can customize themselves.
 -->
-<Project Sdk="Microsoft.NET.Sdk">
+<Project>
     <PropertyGroup>
 
         <!--
