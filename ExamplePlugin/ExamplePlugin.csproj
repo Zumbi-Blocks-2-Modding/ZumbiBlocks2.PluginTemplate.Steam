@@ -2,7 +2,7 @@
     Zumbi Blocks 2 (Steam) Plugin Project
 
     This template comes pre-configured with sensible defaults,
-    and can be customized by editing the *.csproj.user file
+    and can be customized by editing the ExamplePlugin.csproj.user file
 -->
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -13,7 +13,7 @@
         <AssemblyVersion>0.1.0</AssemblyVersion>
         <!-- Know what you're doing and need more customization? Here you go! -->
         <LangVersion>10</LangVersion>
-        <TargetFramework>net462</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
         <IsPackable>false</IsPackable>
         <RestoreAdditionalProjectSources>
             https://api.nuget.org/v3/index.json;
@@ -36,6 +36,11 @@
             Condition="('$(ZumbiBlocks2_Location)' == '' Or !Exists('$(ZumbiBlocks2_Location)')) And Exists('$(DefaultSteamDir)')"
         >$(DefaultSteamDir)
         </ZumbiBlocks2_Location>
+        <!-- If the config file failed to load, disable everything -->
+        <Enable_Task_FileValidation Condition="'$(Enable_Task_FileValidation)' == ''">false</Enable_Task_FileValidation>
+        <Enable_Task_PluginInstall Condition="'$(Enable_Task_PluginInstall)' == ''">false</Enable_Task_PluginInstall>
+        <Enable_Dependency_GameLibs Condition="'$(Enable_Dependency_GameLibs)' == ''">false</Enable_Dependency_GameLibs>
+        <Enable_Dependency_MMHOOK Condition="'$(Enable_Dependency_MMHOOK)' == ''">false</Enable_Dependency_MMHOOK>
     </PropertyGroup>
 
 
